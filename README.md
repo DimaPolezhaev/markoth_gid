@@ -47,19 +47,33 @@ lib/
 
 ### Требования
 
-* Flutter 3.10+
-* Dart 3.0+
-* Android Studio / VS Code
-* Ключ API Gemini (опционально)
+* Flutter 3.19+
+* Dart 3.3+
+* Android Studio / VS Code / Xcode (для iOS)
+* **Обязательно:** Ключ Google AI API (Gemini) для функции распознавания
 
-### Установка
+### Установка и запуск
 
-```bash
-git clone https://github.com/ваш-username/markoth_guide.git
-cd markoth_guide
-flutter pub get
-flutter run
-```
+1. **Клонируйте и установите зависимости:**
+   ```bash
+   git clone https://github.com/ваш-username/markoth_gid.git
+   cd markoth_gid
+   flutter pub get
+   ```
+
+2. **Добавьте API-ключ:**
+   - Получите ключ в [Google AI Studio](https://aistudio.google.com/apikey)
+   - Создайте в корне проекта файл `.env`
+   - Добавьте строку: `GEMINI_API_KEY=ваш_ключ_здесь`
+
+3. **Запустите приложение:**
+   ```bash
+   flutter run
+   ```
+
+### Важно
+- Без API-ключа функция распознавания по фото работать не будет
+- Для iOS требуется Mac с Xcode
 
 ---
 
